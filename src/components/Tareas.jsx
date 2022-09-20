@@ -1,12 +1,12 @@
 import Tarea from "./Tarea"
 
-const Tareas = ({ tareas, onDelete }) => {
+const Tareas = ({ tareas, onDelete, onToggle }) => {
 
   return (
     <>
     {/* {tareas.map((tarea)=>(<h3 key={tarea.id}>{tarea.texto}</h3>))} */}
     {tareas.map((tarea) => (
-        <Tarea key={tarea.id} tarea={tarea} onDelete={onDelete} />
+        <Tarea key={tarea.id} tarea={tarea} onDelete={onDelete}  onToggle={onToggle}/>
     ))}
     </>
   )
